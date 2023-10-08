@@ -18,6 +18,9 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
 
+    - name: Create assets dir
+      run: mkdir -p android/app/src/main/assets
+
     - name: Install dependencies
       run: yarn
 
