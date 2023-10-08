@@ -24,9 +24,6 @@ jobs:
     - name: Install dependencies
       run: yarn
 
-    - name: Bundle
-      run: yarn react-native bundle --entry-file index.js --platform android --dev false --minify true --assets-dest android/app/src/main/res --bundle-output android/app/src/main/assets/index.android.bundle
-
     - name: Build
       run: yarn react-native build-android --mode=release
 
