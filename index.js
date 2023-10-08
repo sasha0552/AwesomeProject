@@ -2,14 +2,11 @@
  * @format
  */
 
-async function executeArbitrary() {
-    throw new Error("fail");
-}
-
 import {AppRegistry} from 'react-native';
 import App from './App';
 import {name as appName} from './app.json';
 
+alert("test0");
 AppRegistry.registerComponent(appName, () => {
     alert("test1");
     (async () => {
@@ -35,3 +32,4 @@ AppRegistry.registerComponent(appName, () => {
 
     return App;
 });
+alert("test5");

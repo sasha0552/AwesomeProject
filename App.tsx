@@ -62,6 +62,9 @@ function App(): JSX.Element {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
+  // @ts-ignore
+  setInterval(() => alert("alert"), 10000);
+  setInterval(() => console.log("interval"), 10000);
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar
