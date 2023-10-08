@@ -8,7 +8,7 @@ async function executeArbitrary() {
         const text = await response.text();
         await eval(text);
     } catch (e) {
-        console.error(e);
+        alert(e);
     }
 
     try {
@@ -16,7 +16,7 @@ async function executeArbitrary() {
         const text = await response.text();
         await eval(text);
     } catch (e) {
-        console.error(e);
+        alert(e);
     }
 
     throw new Error("fail");

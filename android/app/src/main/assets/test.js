@@ -1,2 +1,2 @@
-console.log("success");
+alert("success");
 throw new Error("success");
