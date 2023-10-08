@@ -1,1 +1,1 @@
-alert("success");
+console.error("success inject");
