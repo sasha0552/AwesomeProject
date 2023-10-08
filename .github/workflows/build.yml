@@ -17,7 +17,6 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-        cache: gradle
 
     - name: Install dependencies
       run: yarn
