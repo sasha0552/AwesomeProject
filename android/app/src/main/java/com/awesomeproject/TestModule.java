@@ -15,7 +15,7 @@ public class TestModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod(isBlockingSynchronousMethod = true)
-    public void testMethod() {
+    public String testMethod() {
         return "console.error('success inject')";
     }
 }
