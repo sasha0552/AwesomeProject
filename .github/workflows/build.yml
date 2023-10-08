@@ -25,11 +25,10 @@ jobs:
       run: yarn
 
     - name: Bundle
-      # --dev false --minify true (?)
-      run: yarn react-native bundle --entry-file index.js --platform android --assets-dest android/app/src/main/res --bundle-output android/app/src/main/assets/index.android.bundle
+      run: yarn react-native bundle --entry-file index.js --platform android --dev false --minify true --assets-dest android/app/src/main/res --bundle-output android/app/src/main/assets/index.android.bundle
 
     - name: Build
-      run: yarn react-native build-android
+      run: yarn react-native build-android --mode=release
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v1
